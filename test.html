@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: hsl(222.2, 84%, 4.9%);
+            margin: 0;
+            padding: 20px;
+        }
+        :root {
+            --background: hsl(222.2, 84%, 4.9%);
+            --foreground: hsl(0, 0%, 100%);
+            --primary: hsl(210, 80%, 50%);
+            --secondary: hsl(210, 50%, 50%);
+            --destructive: hsl(360, 70%, 50%);
+            --muted: hsl(210, 15%, 80%);
+            --accent: hsl(230, 60%, 50%);
+            --radius: 0.5rem;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 150px;
+            text-align: center;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideIn 1s ease-out forwards;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+        .card p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            gap: 50px;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: var(--foreground);
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        /* Keyframe Animation */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Delay for each card to create staggered effect */
+        .card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .card:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        .card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        .card:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+        .card:nth-child(5) {
+            animation-delay: 1s;
+        }
+        .card:nth-child(6) {
+            animation-delay: 1.2s;
+        }
+        .card:nth-child(7) {
+            animation-delay: 1.4s;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="test.html" class="nav-link">Skills</a>
+        <a href="my projects.html" class="nav-link">Projects</a>
+        
+        <a href="contuct.html" class="nav-link">Contact</a>
+    </nav>
+
+    <h1>Coding Languages</h1>
+    
+    <div class="container">
+        <div class="card">
+            <img src="2.png" alt="HTML">
+            <p>HTML</p>
+        </div>
+        <div class="card">
+            <img src="7.jpg" alt="CSS">
+            <p>paperCss</p>
+        </div>
+        <div class="card">
+            <img src="1.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+        <div class="card">
+            <img src="6.jpg" alt="Python">
+            <p>Python</p>
+        </div>
+        <div class="card">
+            <img src="4.png" alt="Java">
+            <p>Java</p>
+        </div>
+        <div class="card">
+            <img src="5.png" alt="C++">
+            <p>C++</p>
+        </div>
+        <div class="card">
+            <img src="3.png" alt="PHP">
+            <p>PHP</p>
+        </div>
+    </div>
+</body>
+</html>
